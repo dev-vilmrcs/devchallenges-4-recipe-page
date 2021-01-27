@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+:root {
+  --primary-color: #f2994a;
+  --playfair-fonts: 'Playfair Display', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  line-height: 1.5;
+  background-color: #fafafa;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* CONTENT */
+
+.container {
+  min-width: 320px;
+  min-height: 100vh;
+  max-width: 969px;
+  padding: 2rem 1rem;
+  margin: auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.recipe-detail {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.icons {
+  color: #c4c4c4;
+  display: flex;
+  /* gap: 0.1rem; */
+  padding: 0.3rem;
+}
+
+.description {
+  font-style: italic;
+  margin-left: 0.3em;
+  width: 90%;
+}
+
+.img-container img {
+  border-radius: 10px;
+  height: 15rem;
+}
+
+.recipe-timer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.recipe-item {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.recipe-item .fa {
+  padding: 0.3rem;
+  align-self: center;
+}
+
+.recipe-item:first-of-type {
+  display: block;
+  width: 100%;
+}
+
+.fa-cutlery {
+  color: var(--primary-color);
+}
+
+p.servings {
+  color: var(--primary-color);
+}
+
+.recipe-ingridients > h2 {
+  font-family: var(--playfair-fonts);
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+
+.ingridients {
+  margin-bottom: 1rem;
+}
+
+.ingridients > h3 {
+  font-family: var(--playfair-fonts);
+  font-weight: 400;
+  font-style: italic;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+
+.ingridients > div {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.ingridients > div > p {
+  width: 93%;
+  padding: 0.5rem 1rem;
+}
+
+input[type='checkbox'] {
+  align-self: center;
+  transform: scale(1.5);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type='checkbox']:nth-last-child() {
+  align-self: flex-start;
+}
+
+.ingridients.ing-2 {
+  margin-bottom: 0.2rem;
+}
+
+.instructions > .headline {
+  margin: 1rem 0;
+}
+
+.instructions > div {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.instructions > div > h4 {
+  color: #fff;
+  background: var(--primary-color);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font: inherit;
+}
+
+.instructions > div > p {
+  width: 82%;
+  margin: 0 0.5rem;
+}
+
+.instructions > p {
+  color: #bdbdbd;
+}
+
+footer {
+  margin: 5rem 1rem 0rem 1rem;
+  text-align: center;
+  color: #a9a9a9;
+}
